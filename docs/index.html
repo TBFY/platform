@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TheyBuyForYou Tools</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>-->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/tbfy_icon.png" />
+</head>
+<body>
+
+
+<div class="rounded">
+ <div class="logo logo-image">
+	<div class="logo-image">
+		<a href="http://theybuyforyou.eu/" title="TheyBuyForYou">
+		<img src="img/logo.png" alt="TBFY" height="30%" width="30%" style="border-radius: 10px;">
+		</a>
+		<h1 class="tbfy-title">Platform & online Tools</h1>
+	</div>
+ </div>
+</div>
+
+<div class="container">
+<!--<div class="col-md-1">
+</div>-->
+<div class="col-md-14">
+
+
+
+<!-- <div class="page-header">
+</div>  -->
+<div style="margin-bottom: 1em;"></div>
+
+<section class="panel panel-info">
+  <div class="panel-heading">
+  <h3>TheyBuyForYou Platform</h3>
+  </div>
+  <div class="panel-body-1">
+
+  <div class="description">
+    <p>In TheyBuyForYou we have been working on a layered architecture of data services, ontologies, core APIs and tools that allows different levels of access and use of the procurement knowledge graphs that we have been creating.</p>
+    <p>Having a layer-based architecture allows describing the separation of the different services so that most of the interaction occurs only between adjacent layers and any change in a technology would not affect the rest of the services. As can be seen in the figure TheyBuyForYou tool schema, for this architecture, five main layers have been defined, those corresponding to data, tools, schemas, core APIs and added-value services that will be explained below.</p>
+  </div>
+
+  <schema class="item">
+    <h4 class="title">TheyBuyForYou tool schema</h4>
+    <div class="description"><p><a href="img/TBFY_tool_schema.png" target="_blank"><img src="img/TBFY_tool_schema.png" width="100%"></a></p>
+    </div>
+  </schema>
+  <schema class="item">
+    <h4 class="title">TheyBuyForYou High-level Architecture</h4>
+    <div class="description"><p><a href="img/TBFY_architecture.png" target="_blank"><img src="img/TBFY_architecture.png" width="100%"></a></p>
+    </div>
+  </schema>
+  <hr/>
+
+    <div style="border-left: 6px solid blue; margin-left: -3px; top: 0;"><!-- barra vertical -->
+
+       <div class="list">
+         <p style="text-orientation: upright;color: blue;margin-left: 30px;font-weight:bold;font-size: xx-large;font-weight: 500;">Added-value services</p>
+         <div class="description">
+           <p>In this top layer you can find the added-value services. This added-value services are non-basic services, although they do use the core APIs, that go beyond standard ones and have extended features and add-ons to basic core functions.</p>
+         </div>
+          <article class="item">
+        	  <h4 class="title">API Gateway</h4>
+        	  <div class="description"><p>The TBFY API provides a flexible abstraction layer and a single-entry point that securely manages communication between TBFY clients and online tools via API.</p>
+              <a href="https://tbfy.github.io/api-gateway/" target="_blank"><img src="img/swagger_icon.png" width="12" alt="API"/ class="ico"></a>
+              <a href="https://tbfy.librairy.linkeddata.es/api/" target="_blank"><img src="img/api_icon.png" width="24" alt="API"/ class="ico"></a>
+              <a href="https://github.com/TBFY/api-gateway" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+              <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+        	  </div>
+          </article>
+          <article class="item">
+            <h4 class="title">search API</h4>
+            <div class="description"><p>The search API explores collections of multilingual public procurement data through a Restful API.</p>
+              <a href="https://tbfy.librairy.linkeddata.es/search-api/api.html" target="_blank"><img src="img/swagger_icon.png" width="24" alt="Webpage"/ class="ico"></a>
+              <a href="https://github.com/TBFY/search-api" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+              <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+            </div>
+          </article>
+          <article class="item">
+        	  <h4 class="title">Storytelling</h4>
+        	  <div class="description"><p>Storytelling tool is a client-side JavaScript framework designed for the purpose of supporting authors of data stories.</p>
+              <a href="https://tbfy.github.io/storytelling/" target="_blank"><img src="img/link_icon.png" width="12" alt="API"/ class="ico"></a>
+              <a href="https://github.com/TBFY/storytelling" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+              <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="img/mit_icon.svg  " alt="API"></a>
+        	  </div>
+          </article>
+          <article class="item">
+        	  <h4 class="title">Suppliers notebook</h4>
+        	  <div class="description"><p>Suppliers notebook is an example to explain how the knowledge graph can be exploited through a notebook.</p>
+              <a href="https://colab.research.google.com/github/TBFY/api-gateway/blob/master/notebooks/supplier_resource_ex.ipynb" target="_blank"><img src="img/link_icon.png" width="12" alt="API"/ class="ico"></a>
+              <a href="https://github.com/TBFY/api-gateway/blob/master/notebooks/supplier_resource_ex.ipynb" target="_blank"><img src="img/github_icon.png" width="12" alt="API"/ class="ico"></a>
+              <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+        	  </div>
+          </article>
+          <article class="item">
+        	  <h4 class="title">Organisation comparison notebook</h4>
+        	  <div class="description"><p>Organisation comparison notebook is an example of how to create an added value servie exploiting the core API and search API (via API gateway).</p>
+              <a href="https://colab.research.google.com/github/TBFY/api-gateway/blob/master/notebooks/similarity_organisations_ex.ipynb" target="_blank"><img src="img/link_icon.png" width="12" alt="API"/ class="ico"></a>
+              <a href="https://github.com/TBFY/api-gateway/blob/master/notebooks/similarity_organisations_ex.ipynb" target="_blank"><img src="img/github_icon.png" width="12" alt="API"/ class="ico"></a>
+              <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+        	  </div>
+          </article>
+          <article class="item">
+        	  <h4 class="title">Streamstory</h4>
+        	  <div class="description"><p>StreamStory is a tool, which is intended to help with analysis and interpretation of time varying data.</p>
+              <a href="http://streamstory.ijs.si" target="_blank"><img src="img/link_icon.png" width="12" alt="API"/ class="ico"></a>
+              <!-- <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a> -->
+        	  </div>
+          </article>
+          <article class="item">
+        	  <h4 class="title">Visualise and analyse public procurement data and spending data</h4>
+        	  <div class="description"><p>Online toolkit exploring public spending and tender data and detecting anomalies in them, to make public procurement more efficient and transparent.</p>
+              <a href="http://tbfy.ijs.si/" target="_blank"><img src="img/link_icon.png" width="12" alt="API"/ class="ico"></a>
+              <!-- <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a> -->
+        	  </div>
+          </article>
+          <article class="item">
+        	  <h4 class="title">Economic Data Portal visualisaton components</h4>
+        	  <div class="description"><p>Visualisation tool for suppliers payment period.</p>
+              <a href="http://www.zaragoza.es/sede/servicio/periodopagoproveedores/" target="_blank"><img src="img/link_icon.png" width="12" alt="API"/ class="ico"></a>
+              <!-- <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a> -->
+        	  </div>
+          </article>
+          <article class="item">
+        	  <h4 class="title">Compra Pública Inclusiva (COPIN) - OESIA </h4>
+        	  <div class="description"><p>COPIN (COmpra Pública INclusiva) aims at providing better understanding on how public administrations specify and evaluate public tenders.</p>
+              <a href=" http://tbfy.oesia.com/login" target="_blank"><img src="img/link_icon.png" width="12" alt="API"/ class="ico"></a>
+              <!-- <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a> -->
+        	  </div>
+          </article>
+
+     </div>
+
+     </div> <!-- fin de la barra -->
+
+    <hr/>
+
+
+
+<div style="border-left: 6px solid green; margin-left: -3px; top: 0;"><!-- barra vertical -->
+
+   <div class="list">
+     <p style="text-orientation: upright;color: green;margin-left: 30px;font-weight:bold;font-size: xx-large;font-weight: 500;">core APIs</p>
+     <div class="description">
+       <p>In this layer you can find the set of core APIs built or used in TheyBuyForYou project. We have to distinguish between APIs created specifically for the project (internal) and tools that have not been developed specifically for this project but have been used (external). These core APIs are implemented with the basic resources to extract information from the knowledge graph, from the document repository or even from external data sources.</p>
+     </div>
+     <p style="text-orientation: upright;color: green;margin-left: 30px;font-weight:bold;font-size: large;font-weight: 500;">internal</p>
+      <article class="item">
+    	  <h4 class="title">knowledge graph API</h4>
+    	  <div class="description"><p>The knowledge graph API allows to get information about tenders, organisations, awards, contracts and contracting-processes from the RDFs triple store built within TheyBuyForYou Project.</p>
+        <a href="https://tbfy.github.io/knowledge-graph-API/" target="_blank"><img src="img/swagger_icon.png" width="24" alt="Webpage"/ class="ico"></a>
+          <a href="https://tbfy.librairy.linkeddata.es/kg-api/" target="_blank"><img src="img/api_icon.png" width="24" alt="API"/ class="ico"></a>
+          <a href="https://github.com/TBFY/knowledge-graph-API" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+          <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg  " alt="API"></a>
+    	  </div>
+      </article>
+      <article class="item">
+    	  <h4 class="title">Public procurement OCDS API</h4>
+    	  <div class="description"><p>The public procurement OCDS API is part of the Economic Data Portal (EDP) business case and allows to get information about public procurement from Zaragoza City Council.</p>
+          <a href="https://www.zaragoza.es/docs-api_sede/" target="_blank"><img src="img/swagger_icon.png" width="24" alt="Webpage"/ class="ico"></a>
+          <a href="https://github.com/TBFY/edp-economic-data-portal" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+    	  </div>
+      </article>
+      <p style="text-orientation: upright;color: green;margin-left: 30px;font-weight:bold;font-size: large;font-weight: 500;">external</p>
+      <article class="item">
+    	  <h4 class="title">OpenCorporates companies API</h4>
+    	  <div class="description"><p>OpenCorporates companies API provides access to gather data to over 135 million companies from primary public sources.</p>
+          <a href="https://api.opencorporates.com/" target="_blank"><img src="img/api_icon.png" width="24" alt="API"/ class="ico"></a>
+          <a href="https://opendatacommons.org/licenses/odbl/index.html" target="_blank"><img src="https://img.shields.io/badge/license-ODbL-brightgreen" width="30%" alt="API"></a>
+    	  </div>
+      </article>
+      <article class="item">
+        <h4 class="title">OpenCorporates reconciliation API</h4>
+        <div class="description"><p>OpenCorporates reconciliation API allows OpenRefine users to match company names to legal corporate entities getting more information about companies and making it easier or match company names to legal corporate entities.</p>
+          <a href="https://api.opencorporates.com/documentation/Open-Refine-Reconciliation-API" target="_blank"><img src="img/api_icon.png" width="24" alt="Webpage"/ class="ico"></a>
+          <a href="https://opendatacommons.org/licenses/odbl/index.html" target="_blank"><img src="https://img.shields.io/badge/license-ODbL-brightgreen" width="30%" alt="API"></a>
+        </div>
+      </article>
+      <article class="item">
+        <h4 class="title">OpenOpps API</h4>
+        <div class="description"><p>OpenOpps API provides access to tender and contract data from a range of European government bodies, formatting according to OCDS.</p>
+          <a href="https://openopps.com/api/schema/" target="_blank"><img src="img/swagger_icon.png" width="24" alt="Webpage"/ class="ico"></a>
+          <a href="https://opendatacommons.org/licenses/odbl/index.html" target="_blank"><img src="https://img.shields.io/badge/license-ODbL-brightgreen" width="30%" alt="API"></a>
+        </div>
+      </article>
+      <article class="item">
+        <h4 class="title">librAIry API</h4>
+        <div class="description"><p>librAIry API relates documents from their content, regardless of the language used. SearchAPI has been built on top of it to work with TBFY data.</p>
+          <a href="http://librairy.github.io/" target="_blank"><img src="img/api_icon.png" width="24" alt="API"/ class="ico"></a>
+          <a href="https://github.com/cbadenes/librairy.github.io" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+          <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+        </div>
+      </article>
+      <article class="item">
+        <h4 class="title">Wikifier</h4>
+        <div class="description"><p>Wikifier is a web service which takes a text document as input and annotates it with links to relevant Wikipedia concepts.</p>
+          <a href="http://wikifier.org/" target="_blank"><img src="img/link_icon.png" width="24" alt="API"/ class="ico"></a>
+        </div>
+      </article>
+
+ </div>
+
+ </div> <!-- fin de la barra -->
+
+<hr/>
+
+
+
+
+<div style="border-left: 6px solid orange; margin-left: -3px; top: 0;"><!-- barra vertical -->
+
+   <div class="list">
+     <p style="text-orientation: upright;color: orange;margin-left: 30px;font-weight:bold;font-size: xx-large;font-weight: 500;">Tools</p>
+     <div class="description">
+       <p>In this layer you can find the tools built or used in TheyBuyForYou project. We have to distinguish between tools created specifically for the project (internal) and tools that have not been developed specifically for this project but have been used (external). Among the types of tools, we can find from tools that feed databases to tools that query the TheyBuyForYou SPARQL endpoint.</p>
+     </div>
+     <p style="text-orientation: upright;color: orange;margin-left: 30px;font-weight:bold;font-size: large;font-weight: 500;">Internal</p>
+     <article class="item">
+      <h4 class="title">Harvester</h4>
+      <div class="description"><p>Harvester downloads and index in librAIry legal documents on public procurement.</p>
+         <a href="https://github.com/TBFY/harvester" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+         <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+      </div>
+     </article>
+     <article class="item">
+      <h4 class="title">R4R</h4>
+      <div class="description"><p>R4R easily builds and deploys RESTful services from SPARQL queries. Core API uses it to browse the TBFY knowledge graph.</p>
+         <a href="https://github.com/TBFY/r4r" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+         <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+      </div>
+     </article>
+     <article class="item">
+      <h4 class="title">KG data ingestion pipeline</h4>
+      <div class="description"><p>Data ingestion pipeline downloads OCDS releases in JSON format and reconciled supplier-company records in JSON format, enriches and transforms the data to RDF (using RML), and publishes the data to the TBFY KG database.</p>
+         <a href="https://github.com/TBFY/knowledge-graph" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+         <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+      </div>
+     </article>
+     <p style="text-orientation: upright;color: orange;margin-left: 30px;font-weight:bold;font-size: large;font-weight: 500;">External</p>
+     <article class="item">
+      <h4 class="title">SPARQL GUI for TBFY KG</h4>
+      <div class="description"><p>YASGUI (Yet Another SPARQL GUI) is a web application to query any SPARQL endpoint.</p>
+         <a href="http://yasgui.tbfy.eu/" target="_blank"><img src="img/link_icon.png" width="24" alt="API"/ class="ico"></a>
+         <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="img/mit_icon.svg  " alt="API"></a>
+      </div>
+     </article>
+     <article class="item">
+      <h4 class="title">OptiqueVQS</h4>
+      <div class="description"><p>OptiqueVQS enables end users with no technical background and skills to transform their information needs into SPARQL queries visually.</p>
+         <a href="https://github.com/TBFY/kg-interface" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+         <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+      </div>
+     </article>
+ </div>
+
+ </div> <!-- fin de la barra -->
+
+<hr/>
+
+
+
+ <div style="border-left: 6px solid red; margin-left: -3px; top: 0;"><!-- barra vertical -->
+
+    <div class="list">
+      <p style="text-orientation: upright;color: red;margin-left: 30px;font-weight:bold;font-size: xx-large;font-weight: 500;">Schemas</p>
+      <div class="description">
+        <p>In this layer you can find the schemas that define the vocabularies of our domain, using a set of basic terms and relationships between those terms, as well as the rules that combine terms and relationships and that extend the definitions given in the vocabulary. These vocabularies are the intermediaries that get the knowledge graph to be understood with tools like SPARQL GUI or R4R.</p>
+      </div>
+      <article class="item">
+       <h4 class="title">TBFY ontology</h4>
+       <div class="description"><p>The TBFY ontology imports the OCDS ontology (for procurement data) and the euBusinessGraph ontology (for company data). In addition, it contains a few extensions in order to represent additional meta information needed for the TBFY KG.</p>
+          <a href="https://github.com/TBFY/ocds-ontology" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+          <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+       </div>
+      </article>
+      <article class="item">
+       <h4 class="title">euBusinessGraph ontology</h4>
+       <div class="description"><p>euBusinessGraph ontology for company data. This was originally developed in the euBusinessGraph project and is now being used by TBFY.</p>
+         <a href="https://www.eubusinessgraph.eu/" target="_blank"><img src="img/link_icon.png" width="24" alt="API"/ class="ico"></a>
+          <a href="https://github.com/euBusinessGraph/eubg-data" target="_blank"><img src="img/github_icon.png" width="24" alt="API"/ class="ico"></a>
+          <!-- <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a> -->
+       </div>
+      </article>
+
+  </div>
+
+  </div> <!-- fin de la barra -->
+
+<hr/>
+
+
+<div style="border-left: 6px solid purple; margin-left: -3px; top: 0;"><!-- barra vertical -->
+
+   <div class="list">
+     <p style="text-orientation: upright;color: purple;margin-left: 30px;font-weight:bold;font-size: xx-large;font-weight: 500;">Data</p>
+     <div class="description">
+       <p>In this bottom layer you can find the data that feeds both, the knowledge graph and the document database. The knowledge graph data is obtained from the OpenOpps and OpenCorporates datasets and, through the data ingestion tool, they are transformed into the RDF format to build the triple store.</p>
+     </div>
+     <article class="item">
+      <h4 class="title">TBFY Knowledge Graph (KG)</h4>
+      <div class="description"><p>The knowledge graph is a database that contains the information about tenders, contracts, awards, organisations and contracting processes, used by de API Gateway.</p>
+         <a href="http://data.tbfy.eu/" target="_blank"><img src="img/link_icon.png" width="24" alt="API"/ class="ico"></a>
+         <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="img/apache_icon.svg" alt="API"></a>
+      </div>
+     </article>
+
+ </div>
+
+ </div> <!-- fin de la barra -->
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+<div style="margin-bottom: 1em;"></div>
