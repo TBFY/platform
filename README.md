@@ -1,7 +1,7 @@
 <p align="center"><img width=50% src="https://github.com/TBFY/general/blob/master/figures/tbfy-logo.png"></p>
 <p align="center"><img width=40% src="https://github.com/TBFY/platform/blob/master/logo.png"></p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Docker](https://img.shields.io/badge/docker-v3+-blue.svg)
 ![Docker-Compose](https://img.shields.io/badge/docker_compose-v3.0+-blue.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/TBFY/platform.svg)](https://github.com/TBFY/platform/issues)
@@ -10,11 +10,11 @@
 
 ## Basic Overview
 
-Easy deployment of tools and services. Deploy TBFY resources into a local environment before you release it to the public.
+Easy deployment of TheyBuyForYou tools and services into a local environment.
 
 ## Quick Start
 
-This deployment has been tested in an environment with 4 CPUs and 4GB RAM
+This process has been tested in an environment with 4 CPUs and 4GB RAM
 
 1. Install [Docker](https://docs.docker.com/install/) and [Docker-Compose](https://docs.docker.com/compose/install/)
 1. Clone this repo
@@ -22,11 +22,12 @@ This deployment has been tested in an environment with 4 CPUs and 4GB RAM
 	```
 	git clone https://github.com/TBFY/platform.git
 	```
-1. Download the latest data dump from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3712322.svg)](https://doi.org/10.5281/zenodo.3712322) into a temporal folder (e.g  `/tmp`).
-1. Launch the platform
+1. Download the latest TBFY data dump from Zenodo into a temporal folder (e.g  `/tmp`).
+   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3712322.svg)](https://doi.org/10.5281/zenodo.3712322)
+1. Run the platform by:
     ```
     docker-compose up -d
-	```
+    ```
 1. Wait for all services to be available (e.g. `Started Application in xx.xx seconds`). The first time it may take a few minutes to download the Docker images.
     ```
     docker-compose logs -f
