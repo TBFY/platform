@@ -1,0 +1,399 @@
+﻿{
+  "title": "TBFY Dashboard ",
+  "services": {
+    "query": {
+      "idQueue": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "list": {
+        "0": {
+          "query": "*:*",
+          "alias": "",
+          "color": "#7EB26D",
+          "id": 0,
+          "pin": false,
+          "type": "lucene"
+        }
+      },
+      "ids": [
+        0
+      ]
+    },
+    "filter": {
+      "idQueue": [
+        0,
+        1,
+        2
+      ],
+      "list": {},
+      "ids": []
+    }
+  },
+  "rows": [
+    {
+      "title": "Query",
+      "height": "50px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "error": false,
+          "span": 6,
+          "editable": true,
+          "group": [
+            "default"
+          ],
+          "type": "query",
+          "label": "Search",
+          "history": [
+            "*:*",
+            "labels_t:1309",
+            "labels_t:software_development",
+            "labels_t:_consulting",
+            "labels_s:_consulting"
+          ],
+          "remember": 10,
+          "pinned": true,
+          "query": "*",
+          "title": "Search",
+          "spyable": true,
+          "def_type": ""
+        },
+        {
+          "span": 3,
+          "editable": true,
+          "type": "hits",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=*%3A*&stats=true&stats.field=id&wt=json&rows=0\n",
+            "basic_query": "",
+            "custom": ""
+          },
+          "style": {
+            "font-size": "14pt"
+          },
+          "arrangement": "horizontal",
+          "chart": "total",
+          "counter_pos": "above",
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "spyable": true,
+          "title": "Total Hits",
+          "show_queries": true,
+          "metrics": [
+            {
+              "type": "count",
+              "field": "id",
+              "decimalDigits": 0,
+              "label": "",
+              "value": "90"
+            }
+          ],
+          "refresh": {
+            "enable": false,
+            "interval": 2
+          }
+        },
+        {
+          "span": 3,
+          "editable": true,
+          "type": "hits",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=*%3A*&stats=true&stats.field=size_i&stats.field=size_i&stats.field=size_i&stats.field=size_i&wt=json&rows=0\n",
+            "basic_query": "",
+            "custom": ""
+          },
+          "style": {
+            "font-size": "10pt"
+          },
+          "arrangement": "horizontal",
+          "chart": "total",
+          "counter_pos": "above",
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "spyable": true,
+          "show_queries": true,
+          "metrics": [
+            {
+              "type": "min",
+              "field": "size_i",
+              "decimalDigits": 2,
+              "label": "min",
+              "value": "103.00"
+            },
+            {
+              "type": "mean",
+              "field": "size_i",
+              "decimalDigits": 2,
+              "label": "mean",
+              "value": "455.52"
+            },
+            {
+              "type": "max",
+              "field": "size_i",
+              "decimalDigits": 2,
+              "label": "max",
+              "value": "7535.00"
+            },
+            {
+              "type": "stddev",
+              "field": "size_i",
+              "decimalDigits": 2,
+              "label": "stddev",
+              "value": "821.22"
+            }
+          ],
+          "refresh": {
+            "enable": false,
+            "interval": 2
+          },
+          "title": "Size"
+        }
+      ]
+    },
+    {
+      "title": "Filter",
+      "height": "150px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "error": false,
+          "span": 12,
+          "editable": true,
+          "spyable": true,
+          "group": [
+            "default"
+          ],
+          "type": "filtering"
+        }
+      ]
+    },
+    {
+      "title": "Sources",
+      "height": "300px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "span": 12,
+          "editable": true,
+          "type": "bar",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "query": "q=*%3A*&wt=json&rows=0&facet=true&facet.field=source_s&facet.limit=20",
+            "custom": "",
+            "ids": [
+              0
+            ]
+          },
+          "field": "source_s",
+          "size": 20,
+          "spyable": true,
+          "show_queries": true,
+          "title": "Source"
+        }
+      ]
+    },
+    {
+      "title": "Charts",
+      "height": "550px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "span": 4,
+          "editable": true,
+          "type": "sunburst",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=*%3A*&wt=json&facet=true&facet.pivot=labels_t&facet.limit=1000&rows=0",
+            "custom": ""
+          },
+          "facet_limit": 1000,
+          "spyable": true,
+          "show_queries": true,
+          "title": "Labels",
+          "facet_pivot_strings": [
+            "labels_t"
+          ]
+        },
+        {
+          "span": 4,
+          "editable": true,
+          "type": "bar",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "query": "q=*%3A*&wt=json&rows=0&facet=true&facet.field=lang_s&facet.limit=10",
+            "custom": "",
+            "ids": [
+              0
+            ]
+          },
+          "field": "lang_s",
+          "size": 10,
+          "spyable": true,
+          "show_queries": true,
+          "title": "Language"
+        },
+        {
+          "span": 4,
+          "editable": true,
+          "type": "tagcloud",
+          "loadingEditor": false,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=*%3A*&wt=json&rows=0&facet=true&facet.field=topics0_t&facet.limit=20",
+            "custom": ""
+          },
+          "field": "topics0_t",
+          "size": 20,
+          "alignment": "vertical and horizontal",
+          "fontScale": 1,
+          "ignoreStopWords": false,
+          "spyable": true,
+          "show_queries": true,
+          "title": "Topics-Eurovoc"
+        }
+      ]
+    },
+    {
+      "title": "List",
+      "height": "500px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "span": 12,
+          "editable": true,
+          "type": "table",
+          "loadingEditor": false,
+          "status": "Stable",
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0
+            ],
+            "query": "q=*%3A*&wt=json&rows=250",
+            "basic_query": "q=*%3A*",
+            "custom": ""
+          },
+          "size": 25,
+          "pages": 10,
+          "offset": 0,
+          "sort": [],
+          "sortable": false,
+          "group": "default",
+          "style": {
+            "font-size": "9pt"
+          },
+          "overflow": "min-height",
+          "fields": [
+            "id",
+            "name_s",
+            "labels_t",
+            "format_s",
+            "lang_s",
+            "source_s"
+          ],
+          "important_fields": [
+            "_version_",
+            "format_s",
+            "id",
+            "labels_t",
+            "lang_s",
+            "name_s",
+            "size_i",
+            "source_s",
+            "txt_t"
+          ],
+          "highlight": [],
+          "header": true,
+          "paging": true,
+          "field_list": true,
+          "trimFactor": 300,
+          "normTimes": true,
+          "spyable": true,
+          "saveOption": "json",
+          "exportSize": 250,
+          "exportAll": true,
+          "displayLinkIcon": true,
+          "imageFields": [],
+          "imgFieldWidth": "auto",
+          "imgFieldHeight": "85px",
+          "show_queries": true,
+          "maxNumCalcTopFields": 20,
+          "calcTopFieldValuesFromAllData": false,
+          "refresh": {
+            "enable": false,
+            "interval": 2
+          },
+          "title": "Documents"
+        }
+      ]
+    }
+  ],
+  "editable": true,
+  "index": {
+    "interval": "none",
+    "pattern": "[logstash-]YYYY.MM.DD",
+    "default": "_all"
+  },
+  "style": "light",
+  "failover": false,
+  "panel_hints": true,
+  "loader": {
+    "save_gist": false,
+    "save_elasticsearch": true,
+    "save_local": true,
+    "save_default": true,
+    "save_temp": true,
+    "save_temp_ttl_enable": true,
+    "save_temp_ttl": "30d",
+    "load_gist": true,
+    "load_elasticsearch": true,
+    "load_elasticsearch_size": 20,
+    "load_local": true,
+    "hide": false,
+    "dropdown_collections": false,
+    "save_as_public": true
+  },
+  "solr": {
+    "server": "/solr/",
+    "core_name": "documents",
+    "global_params": "",
+    "core_list": [
+      "documents"
+    ]
+  },
+  "username": "guest",
+  "home": true
+}
