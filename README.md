@@ -4,8 +4,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Docker](https://img.shields.io/badge/docker-v3+-blue.svg)
 ![Docker-Compose](https://img.shields.io/badge/docker_compose-v3.0+-blue.svg)
-[![Release Status](https://jitci.com/gh/TBFY/platform/svg)](https://jitci.com/gh/TBFY/platform)
-[![](https://jitpack.io/v/TBFY/platform.svg)](https://jitpack.io/#TBFY/platform)
 [![GitHub Issues](https://img.shields.io/github/issues/TBFY/platform.svg)](https://github.com/TBFY/platform/issues)
 [![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
