@@ -22,7 +22,7 @@ This process has been tested in an environment with 4 CPUs and 4GB RAM
 	```
 	git clone https://github.com/TBFY/platform.git
 	```
-1. Download the latest TBFY data dump from Zenodo into a temporal folder (e.g  `/tmp`).
+1. Download the latest TBFY data dump from Zenodo into a temporal folder (e.g  `/tmp`).  
    [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3712322.svg)](https://doi.org/10.5281/zenodo.3712322)
 1. Run the platform by:
     ```
