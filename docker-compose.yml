@@ -180,7 +180,7 @@ services:
         max-file: "3"
         labels: "gateway-log"
   kg-gateway:
-    image: tbfy/kg-gateway:latest
+    image: tbfy/platform-gateway:latest
     container_name: kg-gateway
     env_file:
       - gateway-db.env
